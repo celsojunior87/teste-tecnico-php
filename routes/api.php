@@ -16,4 +16,4 @@ use App\Http\Controllers\Api\UsuarioController;
 */
 
 Route::get('list', [UsuarioController::class, 'getAll']);
-
+Route::post('store', [UsuarioController::class, 'store']);
