@@ -28,4 +28,9 @@ class UsuarioController
         return $this->usuarios->store($request);
     }
 
+    public function getArray()
+    {
+        return $this->usuarios->getArray();
+    }
+
 }

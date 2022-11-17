@@ -4,9 +4,6 @@
 namespace App\Interfaces;
 
 
-
-
-
 use App\Http\Requests\UsuariosRequest;
 
 interface UsuariosInterface
@@ -28,4 +25,5 @@ interface UsuariosInterface
      */
     public function store(UsuariosRequest $request);
 
+    public function getArray();
 }

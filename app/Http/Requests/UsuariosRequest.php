@@ -69,7 +69,7 @@ class UsuariosRequest extends FormRequest
         }
 
         throw new HttpResponseException(response()->json([
-            'validators' => $return
+            'errors' => $return
         ], JsonResponse::HTTP_UNPROCESSABLE_ENTITY));
     }
 }
