@@ -3,6 +3,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Http\Requests\UsuariosRequest;
 use App\Interfaces\UsuariosInterface;
 
 class UsuarioController
@@ -20,6 +21,16 @@ class UsuarioController
     {
 
         return $this->usuarios->getAll();
+    }
+
+    public function store(UsuariosRequest $request)
+    {
+        return $this->usuarios->store($request);
+    }
+
+    public function getArray()
+    {
+        return $this->usuarios->getArray();
     }
 
 }
